@@ -1,32 +1,37 @@
 WLDiscordBot
 ============
 
-WLDiscordBot est une ressource Lua pour FiveM qui connecte votre serveur à Discord afin de gérer facilement une whitelist (WL). 
-Ajoutez ou retirez des joueurs via Discord, recevez des notifications et contrôlez l'accès à votre serveur. Simple à installer et personnalisable.
+WLDiscordBot est une ressource Lua pour FiveM qui connecte votre serveur à Discord pour gérer une whitelist (WL). 
+Vous pouvez ajouter ou retirer des joueurs via Discord, recevoir des notifications et contrôler l'accès à votre serveur. 
+Facile à installer et entièrement personnalisable.
 
 Fonctionnalités
 ---------------
 - Synchronisation de la whitelist avec Discord
-- Ajouter ou retirer des joueurs depuis Discord
+- Ajouter ou retirer des joueurs directement depuis Discord
 - Notifications Discord pour les ajouts et suppressions
 - Contrôle simple et sécurisé de l’accès au serveur
-- Facile à installer et personnalisable
+- Compatible avec plusieurs rôles Discord
 
 Installation
 ------------
-1. Téléchargez ou clonez le dépôt :
-   git clone https://github.com/AzizAnakin/WLDiscordBot.git
-2. Placez le dossier WLDiscordBot dans le répertoire 'resources' de votre serveur FiveM
-3. Ajoutez dans votre server.cfg :
+1. Placez le dossier WLDiscordBot dans le répertoire 'resources' de votre serveur FiveM.
+2. Ajoutez dans votre server.cfg :
    ensure WLDiscordBot
-4. Configurez le fichier config.lua avec votre token Discord et les paramètres de whitelist
+3. Ouvrez le fichier config.lua pour configurer votre bot Discord.
 
 Configuration
 -------------
-Dans config.lua, configurez les paramètres :
-- DiscordToken : le token de votre bot Discord
-- WhitelistRoleID : l'ID du rôle Discord autorisé à rejoindre le serveur
-- NotificationChannelID : l'ID du canal Discord pour les notifications
+Dans config.lua, remplacez les valeurs par celles de votre bot/serveur Discord :
+
+- DiscordToken : Le token de votre bot Discord (à récupérer sur le portail développeur Discord)
+- GuildId : L'ID de votre serveur Discord
+- Roles : Table des rôles autorisés, avec le nom du rôle et son ID Discord
+  Exemple :
+    Roles = {
+        ["Admin"] = "123456789012345678",
+        ["VIP"] = "987654321098765432",
+    }
 
 Contribution
 ------------
