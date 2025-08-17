@@ -39,4 +39,4 @@ Les contributions sont les bienvenues. Forkez le dépôt, créez une branche pou
 
 Auteur
 ------
-AzizAnakin – https://github.com/AzizAnakin
+AzizAnakin – [GitHub](https://github.com/AzizAnakin)
