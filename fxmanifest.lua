@@ -1,11 +1,12 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Secumods'
-description ''
+name 'freecam'
+description 'Ressource Freecam pour FiveM'
+author 'AzizAnakin'
 version '1.0.0'
 
 server_scripts {
-    'config.lua',
-    'server.lua'
+    'server.lua',
+    'config.lua'
 }
